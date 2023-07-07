@@ -1,12 +1,12 @@
 package com.poc.paybylink.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class User {
     private  String firstName;
     private String lastName;

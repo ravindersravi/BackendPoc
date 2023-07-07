@@ -10,10 +10,10 @@
 		<relativePath />
 	</parent>
 	<groupId>com.poc.paybylink</groupId>
-	<artifactId>spring-boot-data-jpa</artifactId>
+	<artifactId>pay-by-link-poc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-data-jpa</name>
-	<description>Demo project for Spring Boot Apis CRUD using Spring Data JPA</description>
+	<name>pay-by-link-poc</name>
+	<description>Pay By link Poc</description>
 
 	<properties>
 		<java.version>17</java.version>

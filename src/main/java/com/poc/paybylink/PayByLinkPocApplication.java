@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootDataJpaApplication {
+public class PayByLinkPocApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootDataJpaApplication.class, args);
+		SpringApplication.run(PayByLinkPocApplication.class, args);
 	}
 
 }

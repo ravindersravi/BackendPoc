@@ -3,6 +3,7 @@ package com.poc.paybylink.controller;
 import com.poc.paybylink.model.User;
 import com.poc.paybylink.model.UserLogin;
 import com.poc.paybylink.service.UserService;
+import com.poc.paybylink.service.UserServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -13,13 +14,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @Tag(name = "UserData", description = "PayByLink User management APIs")
-@CrossOrigin(origins = "http://localhost:8081")
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/v1/user")
 public class UserController {
 
-    @Autowired
+
     private UserService userService;
+
+    @Autowired
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
     @Operation(summary = "Login with email and password", tags = { "UserLogin" })
     @ApiResponses({
@@ -44,6 +50,5 @@ public class UserController {
     public String registerUser(@RequestBody User user){
         return userService.registerUser(user);
     }
-
 
 }

@@ -7,7 +7,6 @@ import lombok.Setter;
 
 @Getter
 @Setter
-//@AllArgsConstructor
 @Entity(name = "userData")
 public class UserDao {
     @Id
